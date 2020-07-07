@@ -18,18 +18,20 @@ class Autosuggest extends Component {
   componentDidMount() {
     axios
       .post("https://dev.kwiat.com/KWUpgrade/entity/auth/login", {
-        "name": "admin",
-        "password": "kwiat",
+        name: "admin",
+        password: "kwiat",
       })
       .then(function (response) {
         console.log(response);
       })
       .catch(function (error) {
-        console.log(error);
+        // console.log("error");
       });
-    // axios.get("https://8b0dda03aac5.ngrok.io/").then(function (response) {
-    //   console.log("response", response);
-    // });
+    axios
+      .get("https://gentle-garden-48168.herokuapp.com/")
+      .then(function (response) {
+        console.log("response", response);
+      });
   }
 
   onFocused() {
