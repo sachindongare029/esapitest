@@ -14,7 +14,7 @@
     "react-dom": "16.5.1",
     "react-drag-listview": "^0.1.6",
     "react-image-gallery": "^1.0.7",
-    "react-scripts": "3.4.1"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
